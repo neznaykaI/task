@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Comfortaa";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Acme";
+  font-weight: 300;
+  color: #333;
+  text-align: center;
+  /* color: #3F51B5; */
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0px;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.navbar {
+  position: relative;
+  font-weight: 800;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+.navbar-brand {
+  margin-right: 0;
+  color: #009688 !important;
+}
+.fa-car {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+
+}
+a:hover, a:focus {
+  color:#3F51B5 !important;
+  text-decoration: none;
+}
+
+#header {
+  /* background: url('../images/cars.jpg') no-repeat center top;
+  /* opacity: 0.55; */
+  height: 200px;
+  margin-top: -20px;
+  text-align: top;
+  background-attachment: relative;
+  background-position: center;
+  -webkit-background-size: cover; */
+}
+
+#menu {
+  margin-top: 100px;
+}
+
+.block1, .block2, .block3  {
+  border: 2px solid rgba(255, 255, 255, 0.29);
+  border-radius: 20px;
+  height: 200px;
+  margin-right: 60px;
+  text-align: center;
+}
+
+.menu-link {
+  padding-top: 10px;
+  height: 70px;
+  display: block;
+  color: #009688;
+  font-family: "Acme";
+  font-size: 24px;
+}
+
+.fa-user-friends, .fa-user-plus, .fa-chart-bar {
+  color: #3F51B5;
+  padding-top: 10px;
+  font-size: 60px;
+  display: block;
+}
+
+.fa-times {
+  color: #ba2e2e;
+}
+/* ------------ */
+.lead {
+  font-family: "Acme";
+  color:#009688 !important;
+  font-size: 28px;
+}
+
+table td{
+  font-family: sans-serif;
+  font-size: 17px;
+  background-color: white;
+}

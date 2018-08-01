@@ -28,9 +28,17 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li> <a href="/">На главную</a></li>
-            <li> <a href="{{route('show_auto')}}"> Статистика </a></li>
-            <li> <a href="{{route('clients.index')}}"> База клиентов </a></li>
-            <li> <a href="{{route('create_record')}}"> Добавить клиента </a></li>
+            @if(Auth::guest())
+              <li> <a href="{{route('login')}}"> Вход </a>  </li>
+              @else
+                <li> <a href="{{route('show_auto')}}"> Статистика </a></li>
+                <li> <a href="{{route('clients.index')}}"> База клиентов </a></li>
+                <li> <a href="{{route('create_record')}}"> Добавить клиента </a></li>
+                <li><a href="{{route('logout')}}" title="Выход" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">  Выйти ( {{Auth::user()->login}} )  </a></li>
+              <form hidden action="{{ route('logout') }}" id="logout-form" method="post">
+                {{ csrf_field() }}
+              </form>
+              @endif
           </ul>
       </div>
     </div>
